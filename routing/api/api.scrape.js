@@ -21,11 +21,11 @@ module.exports = app => {
                 $('article.article--post').each((index, article) => {
                     count++;
                     const title = $(article)
-                        .children('h1.article--post__title')
+                        .children('.article--post__title')
                         .children('a')
                         .text();
                     const link = baseUrl + $(article)
-                        .children('h1.article--post__title')
+                        .children('.article--post__title')
                         .children('a')
                         .attr('href');
                     const teaser = $(article)
